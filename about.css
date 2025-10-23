@@ -1,47 +1,32 @@
-/* ===== General Styles ===== */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f7f9fc;
-  color: #333;
-  min-height: 100vh;
-  position: relative;
-  padding-bottom: 80px; /* footer-ka fixed, prevent overlap */
-}
-
-/* Header */
+/* ===== HEADER ===== */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+  background: #0078d7;
+  color: white;
+  padding: 15px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0077cc;
-  padding: 12px -100px;
-  color: white;
-  z-index: 100;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .logo h1 {
-  margin: 0;
+  font-size: 1.5rem;
 }
 
-/* Navigation */
+/* ===== NAVIGATION ===== */
 nav ul {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 20px;
-  margin: 0;
-  padding: 0;
 }
 
 nav ul li a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 nav ul li a:hover,
@@ -49,35 +34,78 @@ nav ul li a.active {
   text-decoration: underline;
 }
 
-/* Dropdown */
-nav ul li.dropdown {
+/* ===== DROPDOWN ===== */
+.dropdown {
   position: relative;
 }
 
-nav ul li .dropdown-content {
+.dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #0077cc;
+  background-color: #fff;
+  color: #333;
   min-width: 160px;
   border-radius: 5px;
-  flex-direction: column;
-  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-nav ul li .dropdown-content li {
-  padding: 10px 15px;
-  color: white;
+.dropdown-content li {
+  padding: 10px;
+}
+
+.dropdown-content li a {
+  color: #333;
+}
+
+.dropdown-content li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ===== MENU TOGGLE (HAMBURGER) ===== */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
   cursor: pointer;
+  color: white;
 }
 
-nav ul li .dropdown-content li:hover {
-  background-color: #005fa3;
-}
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
 
-nav ul li.dropdown:hover .dropdown-content {
-  display: flex;
+  nav {
+    display: none;
+    width: 100%;
+    background: #0078d7;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+  }
+
+  nav.show {
+    display: block;
+  }
 }
 
 /* About Section */
