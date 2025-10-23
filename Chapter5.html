@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 5 - Functions</title>
+  <link rel="stylesheet" href="Chapter4.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Eng AbdiKaadir</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+
+        <li class="dropdown">
+          <a href="#">Chapters ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="Chapter1.html">Chapter 1</a></li>
+            <li><a href="Chapter2.html">Chapter 2</a></li>
+            <li><a href="Chapter3.html">Chapter 3</a></li>
+            <li><a href="Chapter4.html">Chapter 4</a></li>
+            <li><a href="Chapter5.html">Chapter 5</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>JavaScript Functions</h2>
+    <p>Functions are reusable blocks of code that perform a specific task when called.</p>
+
+    <h3>Example 1: Add Two Numbers</h3>
+    <pre>
+function addNumbers(a, b) {
+   return a + b;
+}
+    </pre>
+    <button onclick="addNumbersFunc()">Output</button>
+
+    <h3>Example 2: Greet User</h3>
+    <pre>
+function greet(name) {
+   return "Hello, " + name + "!";
+}
+    </pre>
+    <button onclick="greetFunc()">Output</button>
+
+    <h3>Example 3: Find Square</h3>
+    <pre>
+function square(num) {
+   return num * num;
+}
+    </pre>
+    <button onclick="squareFunc()">Output</button>
+
+    <div id="output" style="margin-top:20px; font-weight:bold; background:#eef; padding:10px; border-radius:6px;">
+      👉 Output will appear here
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 My Website. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="#">Chapter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Main.js"></script>
+</body>
+</html>

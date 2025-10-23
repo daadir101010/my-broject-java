@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Chapter2.css">
+</head>
+<body>
+   <header>
+    <div class="logo">
+      <h1>Eng AbdiKaadir</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+
+        <li class="dropdown">
+          <a href="#">Chapters ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="Chapter1.html">Chapter 1</a></li>
+            <li><a href="Chapter2.html">Chapter 2</a></li>
+            <li><a href="Chapter3.html">Chapter 3</a></li>
+            <li><a href="Chapter4.html">Chapter 4</a></li>
+            <li><a href="Chapter5.html">Chapter 5</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <h1>chapter 2</h1><br>
+        <div class="example2">
+            <h2>numbers</h2><br>
+            <p>let age = 45</p>
+            <p>let price = 2000</p><br>
+            <h2>strings</h2><br>
+            <p>let firstname = 'shafie'</p>
+            <p>let university = 'just'</p><br>
+            <h2>boolean</h2><br>
+            <p>let shafie = true</p>
+            <p>let another_name = false</p><br>
+            <h2>undefined</h2><br>
+            <p>let undefinedVar;</p>
+            <p>console.log(undefinedVar): //outputs: undefined</p><br>
+            <h2>postfix example:</h2><br>
+            <p>let x = 5; <br> let y = x++; <button value="postfix" onclick="postfix1()">out put</button></p><br><br>
+            <p>let  x = 8;<br> let y = x--  <button value="postfix" onclick="postfix2()">out put</button></p><br>
+            <h2>prefix example</h2><br>
+            <p>let x = 10; <br> let y = ++x;  <button value="postfix" onclick="prefix1()">out put</button></p><br><br>
+            <p>let x = 15; <br> let y = --x;  <button value="postfix" onclick="prefix2()">out put</button></p><br>
+            <h2>string concatination implicit convertion</h2><br>
+            <p>let age = 30;</p>
+            <p>let message = 'i am' " + age + " years old ";  <button value="concatination" onclick="concatination()">out put</button></p><br>
+            <h2>numeric operations implicit convertion</h2><br>
+            <p>let numStr = '45'</p>
+            <p>let result = numStr * 2; <button value="numeric" onclick="numeric()">out put</button></p><br>
+            <h2>comparison operators implicit convertion</h2><br>
+            <p>let num = 10;</p>
+            <p>alert(num > strNum)</p>
+            <p>let strNum = '5';  <button value="comparison" onclick="comparison()">out put</button></p><br>
+        </div>
+        <footer>
+  <div class="footer-content">
+    <p>&copy; 2025 My Website. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="#">Chapter</a>
+    </div>
+  </div>
+</footer>
+
+        <script src="Main.js"></script>
+</body>
+</html>
